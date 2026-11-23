@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ config.title }}</title>
+  <meta name="description" content="{{ config.description }}">
+  <style>
+    :root { color-scheme: light dark; --bg: #faf8f4; --fg: #1d1b18; --muted: #6b665e; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #161513; --fg: #ece8e1; --muted: #9a948a; } }
+    html, body { height: 100%; margin: 0; }
+    body {
+      background: var(--bg); color: var(--fg);
+      font: 18px/1.5 Georgia, "Iowan Old Style", serif;
+      display: grid; place-items: center; padding: 0 16px;
+    }
+    main { max-width: 32rem; text-align: center; }
+    h1 { font-size: 2.25rem; font-weight: normal; margin: 0 0 .5rem; }
+    p { color: var(--muted); margin: 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Ken Caruso</h1>
+    <p>A new site is on the way. Check back soon.</p>
+  </main>
+</body>
+</html>
