@@ -1,0 +1,31 @@
+/* Simple: one column, system type, one accent. */
+:root{--bg:#fff;--ink:#1d1d1f;--muted:#5f6368;--line:#e4e4e7;--accent:#1f6f50;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141416;--ink:#ececee;--muted:#a1a1aa;--line:#2c2c30;--accent:#6fcf9f}}
+:root[data-theme="dark"]{--bg:#141416;--ink:#ececee;--muted:#a1a1aa;--line:#2c2c30;--accent:#6fcf9f}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.page{max-width:640px;margin:0 auto;padding:56px 20px 72px}
+a{color:var(--accent);text-underline-offset:3px;text-decoration-thickness:1px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+header{margin-bottom:40px}
+.home{color:var(--ink);font-weight:700;text-decoration:none;font-size:1.05rem}
+h1{font-size:2rem;line-height:1.2;letter-spacing:-.02em;margin:0 0 16px}
+h2{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600;margin:0 0 14px}
+section{margin-top:48px}
+p{margin:0 0 14px}
+.muted{color:var(--muted)}
+ul{list-style:none;margin:0;padding:0}
+.posts li{padding:14px 0;border-top:1px solid var(--line)}.posts li:last-child{border-bottom:1px solid var(--line)}
+.posts a{font-weight:600;text-decoration:none;color:var(--ink)}.posts a:hover{color:var(--accent);text-decoration:underline}
+.meta{display:flex;align-items:center;gap:6px;font-size:.875rem;color:var(--muted);margin-top:2px}
+.tee{flex:none;display:block}
+.posts p{margin:2px 0 0;font-size:.9375rem;color:var(--muted)}
+.legend{font-size:.875rem;color:var(--muted);margin-top:12px;display:flex;flex-wrap:wrap;gap:4px 16px}
+.legend span{display:inline-flex;align-items:center;gap:5px}
+.now li{padding-left:18px;position:relative;margin-bottom:8px}.now li::before{content:"–";position:absolute;left:0;color:var(--muted)}
+.links{display:flex;flex-wrap:wrap;gap:6px 18px}
+article h1{margin-top:8px}
+.deck{font-size:1.15rem;color:var(--muted)}
+article .meta{margin-bottom:28px}
+blockquote{margin:24px 0;padding-left:16px;border-left:2px solid var(--line);color:var(--muted)}
+.note{font-size:.875rem;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;margin-top:32px}
